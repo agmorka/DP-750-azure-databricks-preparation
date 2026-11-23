@@ -24,7 +24,7 @@ Estimated duration is not stated on the page.
 | # | Module | Status | Link |
 |---|---|---|---|
 | 1 | Secure Unity Catalog objects | Notes done | [Notes](../modules/06-secure-unity-catalog-objects.md) · [Module](https://learn.microsoft.com/en-us/training/modules/secure-unity-catalog-objects/) |
-| 2 | Govern Unity Catalog objects | Not started | [Module](https://learn.microsoft.com/en-us/training/modules/govern-unity-catalog-objects/) |
+| 2 | Govern Unity Catalog objects | Notes done | [Notes](../modules/07-govern-unity-catalog-objects.md) · [Module](https://learn.microsoft.com/en-us/training/modules/govern-unity-catalog-objects/) |
 
 ## Back to index
 

@@ -39,7 +39,7 @@ The notes follow the Microsoft Learn training content. For each learning path an
 | Module 05: Create and organize objects in Unity Catalog | Notes done (knowledge check not reviewed) |
 | Path 2: Secure and Govern Unity Catalog Objects in Azure Databricks | Overview done |
 | Module 06: Secure Unity Catalog objects | Notes done (exercise and knowledge check not reviewed) |
-| Module 07: Govern Unity Catalog objects | Not started |
+| Module 07: Govern Unity Catalog objects | Notes done (exercise and knowledge check not reviewed) |
 
 ## Sources
 
