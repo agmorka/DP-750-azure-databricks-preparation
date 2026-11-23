@@ -46,7 +46,7 @@ Each learning path lists its modules. Status is shown next to each item.
 [Path overview](paths/deploy-maintain-data-pipelines-workloads.md): the fourth path, covering pipeline design, Lakeflow Jobs, development lifecycle, and monitoring and optimization. Overview done.
 
 - [12. Design and implement data pipelines with Azure Databricks](modules/12-design-and-implement-data-pipelines.md): order of operations, notebooks vs Lakeflow pipelines, job task logic, error handling, and declarative pipelines. Notes done (exercise and knowledge check not reviewed).
-- 13. Implement Lakeflow Jobs with Azure Databricks: not started.
+- [13. Implement Lakeflow Jobs with Azure Databricks](modules/13-implement-lakeflow-jobs.md): job structure, permissions, triggers, cron schedules, alerts, and retries. Notes done (exercise and knowledge check not reviewed).
 - 14. Implement development lifecycle processes in Azure Databricks: not started.
 - 15. Monitor, troubleshoot and optimize workloads in Azure Databricks: not started.
 
