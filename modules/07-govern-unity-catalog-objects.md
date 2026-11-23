@@ -77,10 +77,10 @@ MATCH COLUMNS has_tag_value('pii', 'ssn') AS ssn_col
 ON COLUMN ssn_col;
 ```
 
-- **UDF rules:** keep them simple and deterministic. Avoid external calls. Reference only table columns. Test with at least 1 million rows. Do not call `is_account_group_member()` or `is_member()` inside the UDF. Keep access rules in the policy, not the UDF.
+- **UDF rules:** keep them simple and deterministic. Avoid external calls. Reference only table columns. Test with a large data set (the unit says at least 1 million rows; verify this figure). Do not call `is_account_group_member()` or `is_member()` inside the UDF. Keep access rules in the policy, not the UDF.
 - **Identity:** policies are evaluated with the **session user's** identity, not the view or function owner.
 - **Scope:** a catalog-level policy covers everything in the catalog. A schema-level policy covers the schema.
-- **Limits:** 100 policies per catalog, 100 per schema, 50 per table, 10,000 per metastore, and 20 principals per policy (TO and EXCEPT combined).
+- **Limits:** 100 policies per catalog, 100 per schema, 50 per table, 10,000 per metastore, and 20 principals per policy (TO and EXCEPT combined). These numbers come from the unit; verify them before the exam.
 - **Conflicts:** only one row filter per table and one mask per column. Conflicting policies block access with an error.
 - **Runtime:** Databricks Runtime 16.4 or later, or serverless compute, is needed to query ABAC-protected tables. Users not covered by a policy can use any runtime.
 
@@ -174,7 +174,7 @@ CREATE RECIPIENT IF NOT EXISTS external_partner COMMENT 'External analytics plat
 DESCRIBE RECIPIENT external_partner;  -- returns the activation link
 
 GRANT SELECT ON SHARE partner_analytics TO RECIPIENT contoso_analytics;
-SHOW GRANT ON SHARE partner_analytics;
+SHOW GRANT ON SHARE partner_analytics;  -- verify this syntax in the docs
 REVOKE SELECT ON SHARE partner_analytics FROM RECIPIENT former_partner;
 DROP RECIPIENT former_partner;
 ```

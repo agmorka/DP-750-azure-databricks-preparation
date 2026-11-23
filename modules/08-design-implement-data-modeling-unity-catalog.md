@@ -131,14 +131,14 @@ CREATE TABLE sales.customer (
     city STRING,
     region STRING,
     valid_from TIMESTAMP NOT NULL,
-    valid_to TIMESTAMP NOT NULL,
+    valid_to TIMESTAMP,  -- NULL for the current row, so this column cannot be NOT NULL
     is_current BOOLEAN
 )
 USING DELTA
 TBLPROPERTIES (delta.enableChangeDataFeed = true);
 ```
 
-**Caution about the sample MERGE:** the unit's MERGE closes the current row and inserts the new version in a separate statement. As written, the second INSERT may match no rows because the timestamps differ, and the two statements are not one transaction. Before you use this pattern, check it. The safer options are a single MERGE that uses a staged union, or `AUTO CDC` in Lakeflow pipelines (the unit's tip).
+**Caution about the sample MERGE:** the unit closes the current row and inserts the new version as two separate steps. Those steps are not one transaction, so a failure between them can leave the table with a closed row and no new version. Check the pattern before you use it. Safer options are one MERGE that reads a staged union of the changed rows and the new versions, or `AUTO CDC` in Lakeflow pipelines (the unit's tip).
 
 **Querying history**
 - Point in time: filter where `valid_from <= ts` and `valid_to > ts`.
@@ -163,7 +163,7 @@ WHERE _change_type IN ('insert', 'update_postimage');
 - Time travel: `TIMESTAMP AS OF`, `VERSION AS OF`, and `DESCRIBE HISTORY`.
 - For long-term audit, stream the change feed into a separate history table, using `trigger(availableNow=True)` in scheduled runs.
 - Default retention: deleted files 7 days (`delta.deletedFileRetentionDuration`), logs 30 days (`delta.logRetentionDuration`). Set both properties for longer history. The unit says they "must be set together", but you can set one alone. Check the current docs.
-- The unit uses `ignoreDeletes` to capture deletes. Verify this before you rely on it in an audit pipeline.
+- The unit's delete-capture example uses `ignoreDeletes`. That option skips delete commits when a Delta table is read as a stream. It does not capture deletes. To capture deletes, use the change data feed, which records `_change_type = 'delete'`. Verify this before you rely on it in an audit pipeline.
 
 ### 7. Granularity
 
@@ -184,7 +184,7 @@ WHERE _change_type IN ('insert', 'update_postimage');
 | Data files | Unity Catalog manages | You manage |
 | Formats | Delta, Iceberg | Delta, CSV, JSON, Avro, Parquet, ORC, text |
 | Predictive optimization | Yes | No |
-| DROP TABLE | Files removed after **8 days**, UNDROP allowed within 8 days | Files stay in storage |
+| DROP TABLE | Recoverable with UNDROP for **7 days** by default, then an asynchronous purge deletes the data files | Files stay in storage |
 
 - Databricks recommends managed tables for most cases.
 - Use external tables when other systems must read or write the files directly. Note that direct access bypasses Unity Catalog controls and auditing.
@@ -229,7 +229,7 @@ CREATE TABLE sales.orders CLUSTER BY AUTO;   -- automatic key selection (needs p
 - Liquid clustering and partitioning cannot be combined.
 - SCD Types 0 to 3, and what Type 2 needs (surrogate key, validity dates, current flag).
 - CDF is off by default and Delta-only.
-- Managed table files are removed **8 days** after DROP, per this unit. Other modules say 7 days. Check the current docs.
+- Managed table data files are purged after a **7-day** recovery window by default. The 8-day figure in this unit was wrong (checked on the Learn managed tables page).
 - Liquid clustering syntax: `CLUSTER BY`, `OPTIMIZE`, `OPTIMIZE ... FULL`, and `CLUSTER BY AUTO`.
 
 ## Knowledge check
@@ -249,7 +249,7 @@ The module assessment did not load when I read the page, so I have no questions 
 
 ## Notes on conflicting or unclear content
 
-- The managed table drop window is 8 days in this module. Earlier modules say 7 days (volumes and architecture unit). Check the current docs.
+- The managed table drop window is 7 days by default. This module's 8-day figure was wrong. Earlier modules are correct.
 - The SCD Type 2 MERGE sample may not work as written. See section 5.
 - The unit's retention advice ("must be set together") and its delete-capture example should be checked against the docs.
 

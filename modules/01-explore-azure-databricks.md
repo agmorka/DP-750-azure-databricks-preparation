@@ -34,7 +34,7 @@ Azure Databricks is a cloud service for data analytics. It runs on Apache Spark.
 
 - Create a workspace in your Azure subscription. You can use the Azure portal, ARM, Bicep, Terraform, PowerShell, or the Azure CLI.
 - You choose a name, a region, and a pricing tier.
-- The pricing tiers are Premium and Trial (a 14-day free trial of Premium). The Standard tier is no longer available for new workspaces since April 1, 2026.
+- The pricing tiers are Premium and Trial (a 14-day free trial of Premium). The unit says the Standard tier is no longer available for new workspaces since April 1, 2026. Verify this date before the exam.
 - The workspace types are Serverless (recommended for most cases) and Hybrid (also called Classic). Hybrid is for custom networking or on-premises connections.
 - The Free Edition is for students and educators. It has daily usage limits and no classic compute.
 - The workspace UI has a sidebar with sections such as Workspace, Recents, Catalog, Jobs & Pipelines, Compute, and Marketplace. The **+ New** button creates objects and compute.
@@ -64,7 +64,7 @@ Azure Databricks is a cloud service for data analytics. It runs on Apache Spark.
 
 - **Unity Catalog** manages access, discovery, lineage, audit logs, and quality monitoring. There is usually one metastore per region.
 - Names follow the pattern `catalog.schema.object`.
-- **Managed tables** are fully governed by Unity Catalog and always use Delta.
+- **Managed tables** are governed by Unity Catalog, and Unity Catalog manages their storage. Delta is the default format. Managed Iceberg tables also exist (see module 08), so do not say managed tables always use Delta.
 - **External tables** are governed by Unity Catalog, but the storage is managed outside it. They can use Delta, CSV, JSON, or Parquet.
 - Access is granted with SQL, for example `GRANT CREATE TABLE ON SCHEMA mycatalog.myschema TO finance-team`. Control can go down to rows and columns.
 - Unity Catalog is usually enabled by default when you create a workspace.

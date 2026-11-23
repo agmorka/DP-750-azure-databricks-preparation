@@ -74,7 +74,7 @@ Part of: [Set up and Configure an Azure Databricks Environment](../paths/set-up-
 
 ### 3. Feature settings
 
-- **Photon:** a native query engine for SQL and DataFrame work. Helps joins, aggregations, and scans on large data. Enabled by default on Runtime 9.1 LTS and later. Not supported on GPU clusters.
+- **Photon:** a native query engine for SQL and DataFrame work. Helps joins, aggregations, and scans on large data. Enabled by default on Runtime 9.1 LTS and later (verify this version on the Photon page before the exam). Not supported on GPU clusters.
 - **Runtime choice:** use the latest runtime for interactive development. Use an LTS runtime for production jobs.
 - **Runtime ML:** pre-installed ML libraries and GPU drivers. Start here for ML work.
 - The Spark version is tied to the runtime you choose.

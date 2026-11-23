@@ -102,9 +102,9 @@ SET ROW FILTER nation_filter ON (c_nationkey);
 - Views are read-only.
 
 **Choosing:**
-- **Row and column security** (preferred): one table plus a few functions. Enforced at the source. Fewer objects to manage.
+- **Row and column security** (the approach taught in detail here): one table plus a few functions. Enforced at the source. Fewer objects to manage.
 - **Dynamic views:** good when you need to combine tables, or when consumers should not see the structure underneath.
-- The module says **attribute-based access control (ABAC)** is now the recommended approach for most cases. It is covered in module 7.
+- The module says **attribute-based access control (ABAC)** is now the recommended approach for most cases. That conflicts with the "preferred" label on row and column security above. ABAC is covered in module 7. Know both, and check the current docs.
 
 Common pitfalls: duplicating tables per audience, too many near-identical views, complex business logic in masks, unsecured functions, and over-masking.
 
@@ -116,7 +116,7 @@ Common pitfalls: duplicating tables per audience, too many near-identical views,
 - A **secret scope** is a named group of secrets. Permissions are set per scope.
 - **Key Vault-backed scope:** read-only in Databricks. Manage the secrets in Key Vault. Restart clusters after you change a secret, because clusters cache values at startup.
 - **Prerequisites for the scope:**
-  - The Key Vault must use the **Vault access policy** permission model. Azure RBAC is not supported. Key Vault API version 2026-02-01 and later default to RBAC, so check this before you create the scope.
+  - The Key Vault must use the **Vault access policy** permission model. Azure RBAC is not supported. The module says Key Vault API version 2026-02-01 and later default to RBAC. I have not verified this, so check it before you create the scope.
   - Allow access from the networks you need, and allow trusted Microsoft services.
   - Get the DNS name and resource ID of the Key Vault.
 - Create the scope at `https://<workspace>#secrets/createScope`. The URL is case-sensitive.
@@ -131,7 +131,7 @@ dbutils.secrets.list("jdbc")  # lists keys, not values
 ```
 ```sql
 SELECT secret('jdbc', 'username');
--- try_secret() returns NULL when a secret is missing
+-- try_secret() returns NULL when a secret is missing (unverified: confirm the function exists in the docs)
 ```
 
 - Printed secret values show as `[REDACTED]`. Redaction is best-effort only. Anyone who can run code on the cluster can read the value.

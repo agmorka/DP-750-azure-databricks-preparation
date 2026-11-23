@@ -92,7 +92,7 @@ Part of: [Deploy and Maintain Data Pipelines and Workloads with Azure Databricks
 - Destinations: email addresses, or system destinations (Slack, Microsoft Teams, PagerDuty, HTTP webhook). A workspace administrator creates system destinations under **Admin Settings > Notifications**. Each system destination needs credentials. Limit: three system destinations per event type, per job or task.
 - **Job-level** notifications: **Job details > Job notifications > Edit notifications**. They are not sent when individual tasks fail and retry.
 - **Task-level** notifications: set on the task panel. They fire for each task run and show which step failed.
-- **Mute notifications until the last retry** stops alerts for each retry. You still get an alert if the task finally fails. The unit says Azure Databricks retries failed tasks three times by default. This conflicts with the restarts unit (see section 6), so check the current default in your workspace.
+- **Mute notifications until the last retry** stops alerts for each retry. You still get an alert if the task finally fails. The alerts unit says tasks retry three times by default. That conflicts with the restarts unit and the configure-task page, which say most configurations do not retry by default. Treat the alerts unit's claim as wrong here (see section 6).
 - Noise reduction: mute skipped and canceled runs (job-level only), set duration thresholds from historical run times, and document why each alert exists.
 - Webhook payloads are JSON with an `event_type` (for example `jobs.on_failure`), a workspace ID, and run and job IDs.
 - If Azure Data Factory orchestrates the jobs, use ADF alerts for orchestration metrics and Databricks notifications for job events.
@@ -100,7 +100,7 @@ Part of: [Deploy and Maintain Data Pipelines and Workloads with Azure Databricks
 ### 6. Automatic restarts and retries
 
 - Default: most jobs do not retry. You must configure retries explicitly.
-- Exceptions: serverless jobs auto-optimize retries by default. Continuous jobs use exponential backoff and retry the whole job on failure.
+- Exceptions: serverless jobs auto-optimize retries by default. For continuous jobs, the default task retry mode is **On failure**, which retries failed tasks inside the job. Exponential backoff applies to repeated failures (see below).
 - Jobs that must run exactly once, such as non-idempotent writes, need auto-optimization turned off.
 - **Task retries**: open the task in **Tasks**, select **+ Add** next to **Retries**, then set the count and interval. The interval is in milliseconds, and it is measured from the start of the failed run to the start of the retry.
 - **Continuous jobs**: add a Continuous trigger, then set **Task retry mode**. **On failure** retries failed tasks inside the job (default for new continuous jobs). **Never** retries only at job level.
@@ -123,7 +123,7 @@ Part of: [Deploy and Maintain Data Pipelines and Workloads with Azure Databricks
 - [ ] I know that simple schedules cannot set the first run time, and the 10-second minimum.
 - [ ] I know the three concurrency behaviors and why Queue is the usual choice.
 - [ ] I know the difference between job-level and task-level notifications.
-- [ ] I know that continuous jobs use exponential backoff and that timeouts apply per attempt.
+- [ ] I know the default task retry mode for continuous jobs (On failure), and that timeouts apply per attempt.
 
 ## Knowledge check and exercise
 

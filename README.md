@@ -50,6 +50,12 @@ Each learning path lists its modules. Status is shown next to each item.
 - [14. Implement development lifecycle processes in Azure Databricks](modules/14-implement-development-lifecycle-processes.md): Git folders, branches and pull requests, testing strategy, Declarative Automation Bundles, and CLI deployment. Notes done (exercise and knowledge check not reviewed).
 - [15. Monitor, troubleshoot and optimize workloads in Azure Databricks](modules/15-monitor-troubleshoot-optimize-workloads.md): cluster consumption, job repair, Spark UI diagnostics, skew, spill, shuffle, and log streaming. Notes done (exercise and knowledge check not reviewed).
 
+## Review status
+
+The notes went through a simulated review. Three reviewers, each planning to take DP-750, read the notes as read-only reviewers. This was a simulated review, not feedback from real people. Their findings were checked against Microsoft Learn. Confirmed corrections are applied in the modules. Unconfirmed numbers and claims are marked "verify before the exam".
+
+Knowledge checks and lab exercises are not captured in most notes. The module pages did not load them. Review them on the Learn pages before the exam.
+
 ## Sources
 
 All content comes from Microsoft Learn and related Microsoft documentation. Each note lists its references at the bottom.

@@ -41,7 +41,7 @@ Three connection methods:
 1. **Power BI Desktop** connects to clusters or SQL warehouses. Use SQL warehouses with DirectQuery.
    - Setup: Partner Connect (fastest) or manual, using the Server Hostname and HTTP Path.
    - Modes: **Import** (fast, needs refreshes) or **DirectQuery** (live, needs running compute).
-   - New connections use the ADBC driver by default since February 2026. Older ones use ODBC.
+   - New connections use the ADBC driver by default since February 2026. Older ones use ODBC. (Verify this date before the exam.)
    - Authentication: personal access tokens (single user), Entra ID (SSO, per-user Unity Catalog checks), or service principals (automation).
    - Power BI Desktop needs Windows.
 2. **Publish from Azure Databricks** to the Power BI service: in Catalog Explorer, choose **Publish to Power BI workspace**.
@@ -87,7 +87,7 @@ Governance table to remember:
   - **Genie spaces as tools:** the agent calls Genie over MCP. Needs the **Managed MCP Servers** preview. This is in Public Preview.
 - Authentication: OAuth (per-user Unity Catalog checks, same Entra tenant required) or a service principal (no per-user row security).
 - Needs a serverless or pro SQL warehouse. Classic warehouses are not supported for Genie.
-- Power Platform throttling: 100 API calls per 60 seconds.
+- Power Platform throttling: 100 API calls per 60 seconds. (Numeric limit: verify before the exam.)
 - Not supported in government clouds.
 
 ### 6. Microsoft Purview
@@ -106,7 +106,7 @@ Governance table to remember:
 - Agents do not write SQL. Genie generates the SQL and enforces Unity Catalog permissions.
 - Authentication: **OAuth identity passthrough**. Managed OAuth (Entra ID) is recommended.
 - Requires the **Managed MCP Servers** preview.
-- Limits: **5 questions per minute**. No conversation history between MCP tool calls.
+- Limits: **5 questions per minute** (numeric limit: verify before the exam). No conversation history between MCP tool calls.
 - Costs: Foundry usage plus serverless SQL compute for Genie queries.
 - Status: Public Preview.
 

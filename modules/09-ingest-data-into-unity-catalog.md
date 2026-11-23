@@ -54,7 +54,7 @@ The module's summary gives a simple rule: use managed connectors for common ente
 - Write to a table with `df.write.mode(...).saveAsTable("catalog.schema.table")`. Write modes are `overwrite`, `append`, `ignore`, and `error` (the default).
 - Azure Databricks writes Delta by default.
 - Streaming read: `spark.readStream` instead of `spark.read`. For Kafka, `startingOffsets` is `latest` or `earliest`. After a checkpoint exists, restarts resume from the checkpoint and ignore `startingOffsets`.
-- File-based streams need an explicit schema. Schema inference is not supported for streaming file sources in this context.
+- A plain `readStream` file source needs an explicit schema by default, because Spark does not infer one for streams. Auto Loader is different: it infers a schema when `cloudFiles.schemaLocation` is set (see section 7).
 - Streaming write output modes: `append` (default for most cases), `update`, and `complete` (for aggregations).
 - The VARIANT type stores semi-structured data. `variant_get` reads a field by path.
 
@@ -73,7 +73,7 @@ The module's summary gives a simple rule: use managed connectors for common ente
 
 - A CDC record holds the data columns, an operation type (INSERT, UPDATE, or DELETE), and a sequence column.
 - AUTO CDC handles out-of-order records by comparing sequence values. An older late update is ignored.
-- Python: `dp.create_streaming_table(...)` for the target, then `dp.create_auto_cdc_flow(...)` with `keys`, `sequence_by`, `apply_as_deletes`, `except_column_list`, and `stored_as_scd_type`.
+- Python: `dp.create_streaming_table(...)` for the target, then `dp.create_auto_cdc_flow(...)` with `keys`, `sequence_by`, `apply_as_deletes`, `except_column_list`, and `stored_as_scd_type`. Python examples need `from pyspark import pipelines as dp` at the top. The module samples leave this import out.
 - SQL: `CREATE OR REFRESH STREAMING TABLE` for the target, then `CREATE FLOW ... AS AUTO CDC INTO ... KEYS (...) APPLY AS DELETE WHEN ... SEQUENCE BY ... STORED AS SCD TYPE 1 | 2`.
 - `ignore_null_updates` (Python) or `IGNORE NULL UPDATES` (SQL) keeps existing values when a partial update sends nulls for unchanged columns.
 - `TRACK HISTORY ON ... EXCEPT (...)` (SQL, SCD type 2) avoids new history versions for columns that change often but are not meaningful, such as `last_login`.
@@ -83,7 +83,7 @@ The module's summary gives a simple rule: use managed connectors for common ente
 - Structured Streaming treats the stream as an unbounded table. It uses the same DataFrame API as batch, with `readStream` and `writeStream`.
 - Kafka rows have `key`, `value`, `topic`, `partition`, `offset`, and `timestamp`. `key` and `value` are binary, so cast `value` to string and parse it (for example with `from_json`).
 - Event Hubs works two ways: through its Kafka-compatible endpoint (port 9093, SASL_SSL with PLAIN, connection string from a secret), or with the native `eventhubs` format. The native connector puts the payload in `body`.
-- `startingPosition` for the native connector takes a JSON offset, sequence number, or enqueued time. `-1` means the latest events.
+- `startingPosition` for the native connector takes a JSON offset, sequence number, or enqueued time. `-1` is noted as meaning the latest events (verify this value on the module page before the exam).
 - **Checkpoints** store progress. Each streaming query needs its own unique checkpoint location. Sharing one causes processing errors.
 - Triggers: default (next micro-batch as soon as the previous one finishes), `processingTime="10 seconds"`, `availableNow=True` (process all available data, then stop), and `once=True` (deprecated).
 - Use `availableNow=True` for scheduled incremental runs with Databricks Jobs.
