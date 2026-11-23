@@ -37,7 +37,7 @@ Each learning path lists its modules. Status is shown next to each item.
 [Path overview](paths/prepare-and-process-data.md): the third path, covering data modeling, ingestion, transformation, and data quality. Overview done.
 
 - [08. Design and implement data modeling with Azure Databricks](modules/08-design-implement-data-modeling-unity-catalog.md): ingestion design, table formats, partitioning, SCD, granularity, and clustering. Notes done (exercise and knowledge check not reviewed).
-- 09. Ingest data into Unity Catalog: not started.
+- [09. Ingest data into Unity Catalog](modules/09-ingest-data-into-unity-catalog.md): Lakeflow Connect, notebooks, SQL loads, AUTO CDC, Structured Streaming, Auto Loader, and declarative pipelines. Notes done (exercise and knowledge check not reviewed).
 - 10. Cleanse, transform, and load data into Unity Catalog: not started.
 - 11. Implement and manage data quality constraints with Azure Databricks: not started.
 
