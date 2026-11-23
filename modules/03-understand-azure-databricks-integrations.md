@@ -122,6 +122,8 @@ Governance table to remember:
 
 ## Knowledge check
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-integrations/9-knowledge-check
+
 The module assessment did not load when I read the page, so I have no questions to record. Add them after you take the assessment.
 
 ## Quick review checklist
@@ -136,6 +138,7 @@ The module assessment did not load when I read the page, so I have no questions 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-integrations/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-integrations/9-knowledge-check
 - Introduction: https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-integrations/1-introduction
 - Microsoft Fabric: https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-integrations/2-integration-databricks-microsoft-fabric
 - Power BI: https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-integrations/3-integration-databricks-power-bi

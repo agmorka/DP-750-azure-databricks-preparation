@@ -210,6 +210,8 @@ RETURN price * (1 - discount_rate);
 
 ## Knowledge check
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/create-and-organize-objects-in-unity-catalog/11-knowledge-check
+
 The module assessment did not load when I read the page, so I have no questions to record. Add them after you take the assessment.
 
 ## Quick review checklist
@@ -229,6 +231,7 @@ The module assessment did not load when I read the page, so I have no questions 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/create-and-organize-objects-in-unity-catalog/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/create-and-organize-objects-in-unity-catalog/11-knowledge-check
 - Naming conventions: https://learn.microsoft.com/en-us/training/modules/create-and-organize-objects-in-unity-catalog/2-apply-naming-conventions
 - Create catalog: https://learn.microsoft.com/en-us/training/modules/create-and-organize-objects-in-unity-catalog/3-create-catalog
 - Create schema: https://learn.microsoft.com/en-us/training/modules/create-and-organize-objects-in-unity-catalog/4-create-schema

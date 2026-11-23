@@ -96,6 +96,8 @@ Part of: [Set up and Configure an Azure Databricks Environment](../paths/set-up-
 
 ## Knowledge check
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-architecture/6-knowledge-check
+
 The module assessment did not load when I read the page, so I have no questions to record. Add them after you take the assessment.
 
 ## Quick review checklist
@@ -110,6 +112,7 @@ The module assessment did not load when I read the page, so I have no questions 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-architecture/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-architecture/6-knowledge-check
 - Introduction: https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-architecture/1-introduction
 - Architecture: https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-architecture/2-understand-azure-databricks-architecture
 - Unity Catalog managed storage: https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-architecture/3-understand-unity-catalog-managed-storage

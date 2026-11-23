@@ -99,11 +99,14 @@ Part of: [Deploy and Maintain Data Pipelines and Workloads with Azure Databricks
 
 ## Knowledge check and exercise
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/design-implement-data-pipelines/9-knowledge-check
+
 The exercise and knowledge check were not captured in these notes. Review them on the module page before the exam.
 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/design-implement-data-pipelines/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/design-implement-data-pipelines/9-knowledge-check
 - Unit 2, order of operations: https://learn.microsoft.com/en-us/training/modules/design-implement-data-pipelines/2-design-order-operations-pipeline
 - Unit 3, notebooks vs Lakeflow pipelines: https://learn.microsoft.com/en-us/training/modules/design-implement-data-pipelines/3-choose-notebook-lakeflow-pipelines
 - Unit 4, Lakeflow Jobs task logic: https://learn.microsoft.com/en-us/training/modules/design-implement-data-pipelines/4-design-task-logic-lakeflow-job

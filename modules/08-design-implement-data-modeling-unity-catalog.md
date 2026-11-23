@@ -234,6 +234,8 @@ CREATE TABLE sales.orders CLUSTER BY AUTO;   -- automatic key selection (needs p
 
 ## Knowledge check
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/design-implement-data-modeling-unity-catalog/13-knowledge-check
+
 The module assessment did not load when I read the page, so I have no questions to record. Add them after you take the assessment.
 
 ## Quick review checklist
@@ -256,6 +258,7 @@ The module assessment did not load when I read the page, so I have no questions 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/design-implement-data-modeling-unity-catalog/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/design-implement-data-modeling-unity-catalog/13-knowledge-check
 - Ingestion design: https://learn.microsoft.com/en-us/training/modules/design-implement-data-modeling-unity-catalog/2-design-data-ingestion-logic
 - Ingestion tools: https://learn.microsoft.com/en-us/training/modules/design-implement-data-modeling-unity-catalog/3-choose-data-ingestion-tool
 - Table formats: https://learn.microsoft.com/en-us/training/modules/design-implement-data-modeling-unity-catalog/4-choose-data-table-format

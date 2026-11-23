@@ -130,11 +130,14 @@ The module's summary gives a simple rule: use managed connectors for common ente
 
 ## Knowledge check and exercise
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/ingest-data-into-unity-catalog/10-knowledge-check
+
 The lab exercise and knowledge check were not captured in these notes. The module page loaded only the content units. Review the exercise and questions on the module page before the exam.
 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/ingest-data-into-unity-catalog/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/ingest-data-into-unity-catalog/10-knowledge-check
 - Unit 1, introduction: https://learn.microsoft.com/en-us/training/modules/ingest-data-into-unity-catalog/1-introduction
 - Unit 2, Lakeflow Connect: https://learn.microsoft.com/en-us/training/modules/ingest-data-into-unity-catalog/2-ingest-data-lakeflow-connect
 - Unit 3, notebooks: https://learn.microsoft.com/en-us/training/modules/ingest-data-into-unity-catalog/3-ingest-data-notebooks

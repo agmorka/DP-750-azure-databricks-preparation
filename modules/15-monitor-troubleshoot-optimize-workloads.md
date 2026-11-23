@@ -117,11 +117,14 @@ Part of: [Deploy and Maintain Data Pipelines and Workloads with Azure Databricks
 
 ## Knowledge check and exercise
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/monitor-troubleshoot-optimize-workloads-azure-databricks/8-knowledge-check
+
 The exercise and knowledge check were not captured in these notes. The module summary also did not load. Review them on the module page before the exam.
 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/monitor-troubleshoot-optimize-workloads-azure-databricks/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/monitor-troubleshoot-optimize-workloads-azure-databricks/8-knowledge-check
 - Unit 2, cluster consumption: https://learn.microsoft.com/en-us/training/modules/monitor-troubleshoot-optimize-workloads-azure-databricks/2-monitor-manage-cluster-consumption
 - Unit 3, troubleshoot and repair Lakeflow Jobs: https://learn.microsoft.com/en-us/training/modules/monitor-troubleshoot-optimize-workloads-azure-databricks/3-troubleshoot-repair-lakeflow-jobs
 - Unit 4, troubleshoot Spark jobs and notebooks: https://learn.microsoft.com/en-us/training/modules/monitor-troubleshoot-optimize-workloads-azure-databricks/4-troubleshoot-repair-spark-jobs-notebooks

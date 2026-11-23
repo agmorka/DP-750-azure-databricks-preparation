@@ -214,6 +214,8 @@ DROP RECIPIENT former_partner;
 
 ## Knowledge check
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/govern-unity-catalog-objects/9-knowledge-check
+
 The module assessment did not load when I read the page, so I have no questions to record. Add them after you take the assessment.
 
 ## Quick review checklist
@@ -233,6 +235,7 @@ The module assessment did not load when I read the page, so I have no questions 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/govern-unity-catalog-objects/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/govern-unity-catalog-objects/9-knowledge-check
 - Table definitions: https://learn.microsoft.com/en-us/training/modules/govern-unity-catalog-objects/2-preserve-table-column-definitions
 - ABAC: https://learn.microsoft.com/en-us/training/modules/govern-unity-catalog-objects/3-configure-attribute-based-access-control-tags-policies
 - Data retention: https://learn.microsoft.com/en-us/training/modules/govern-unity-catalog-objects/4-apply-data-retention-policies

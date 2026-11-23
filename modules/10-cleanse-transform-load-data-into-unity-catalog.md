@@ -111,11 +111,14 @@ Part of: [Prepare and Process Data with Azure Databricks](../paths/prepare-and-p
 
 ## Knowledge check and exercise
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/cleanse-transform-load-data-into-unity-catalog/10-knowledge-check
+
 The exercise and knowledge check were not captured in these notes. Review them on the module page before the exam.
 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/cleanse-transform-load-data-into-unity-catalog/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/cleanse-transform-load-data-into-unity-catalog/10-knowledge-check
 - Unit 2, profile data: https://learn.microsoft.com/en-us/training/modules/cleanse-transform-load-data-into-unity-catalog/2-profile-data-summary-statistics
 - Unit 3, column data types: https://learn.microsoft.com/en-us/training/modules/cleanse-transform-load-data-into-unity-catalog/3-choose-appropriate-column-data-types
 - Unit 4, duplicates and nulls: https://learn.microsoft.com/en-us/training/modules/cleanse-transform-load-data-into-unity-catalog/4-resolve-duplicate-missing-null-values

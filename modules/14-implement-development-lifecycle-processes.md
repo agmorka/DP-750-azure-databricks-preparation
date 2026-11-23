@@ -100,11 +100,14 @@ Part of: [Deploy and Maintain Data Pipelines and Workloads with Azure Databricks
 
 ## Knowledge check and exercise
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/implement-development-lifecycle-processes-in-azure-databricks/8-knowledge-check
+
 The exercise and knowledge check were not captured in these notes. Review them on the module page before the exam.
 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/implement-development-lifecycle-processes-in-azure-databricks/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/implement-development-lifecycle-processes-in-azure-databricks/8-knowledge-check
 - Unit 2, Git version control: https://learn.microsoft.com/en-us/training/modules/implement-development-lifecycle-processes-in-azure-databricks/2-apply-version-control-git
 - Unit 3, branching and pull requests: https://learn.microsoft.com/en-us/training/modules/implement-development-lifecycle-processes-in-azure-databricks/3-manage-branching-pull-requests-conflicts
 - Unit 4, testing strategy: https://learn.microsoft.com/en-us/training/modules/implement-development-lifecycle-processes-in-azure-databricks/4-implement-testing-strategy

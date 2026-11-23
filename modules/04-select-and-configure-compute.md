@@ -149,6 +149,8 @@ The lab page did not load in full when I read the module, so I have not recorded
 
 ## Knowledge check
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/select-and-configure-compute/8-knowledge-check
+
 The module assessment did not load when I read the page, so I have no questions to record. Add them after you take the assessment.
 
 ## Quick review checklist
@@ -168,6 +170,7 @@ The module assessment did not load when I read the page, so I have no questions 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/select-and-configure-compute/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/select-and-configure-compute/8-knowledge-check
 - Introduction: https://learn.microsoft.com/en-us/training/modules/select-and-configure-compute/1-introduction
 - Choose a compute type: https://learn.microsoft.com/en-us/training/modules/select-and-configure-compute/2-choose-appropriate-compute-type
 - Configure compute performance: https://learn.microsoft.com/en-us/training/modules/select-and-configure-compute/3-configure-compute-performance

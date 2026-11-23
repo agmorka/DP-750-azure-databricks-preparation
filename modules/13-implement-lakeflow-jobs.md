@@ -127,11 +127,14 @@ Part of: [Deploy and Maintain Data Pipelines and Workloads with Azure Databricks
 
 ## Knowledge check and exercise
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/implement-lakeflow-jobs/8-knowledge-check
+
 The exercise and knowledge check were not captured in these notes. Review them on the module page before the exam.
 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/implement-lakeflow-jobs/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/implement-lakeflow-jobs/8-knowledge-check
 - Unit 2, create a job: https://learn.microsoft.com/en-us/training/modules/implement-lakeflow-jobs/2-create-lakeflow-job
 - Unit 3, configure triggers: https://learn.microsoft.com/en-us/training/modules/implement-lakeflow-jobs/3-configure-job-triggers
 - Unit 4, schedule a job: https://learn.microsoft.com/en-us/training/modules/implement-lakeflow-jobs/4-schedule-job

@@ -88,6 +88,8 @@ Lab instructions: https://microsoftlearning.github.io/DP-750T00-Implement-Data-E
 
 ## Knowledge check
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/explore-azure-databricks/7-knowledge-check
+
 The questions did not load when I read the module, so this section is empty. Add them here after reviewing the module assessment.
 
 ## Quick review checklist
@@ -102,6 +104,7 @@ The questions did not load when I read the module, so this section is empty. Add
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/explore-azure-databricks/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/explore-azure-databricks/7-knowledge-check
 - Module summary: https://learn.microsoft.com/en-us/training/modules/explore-azure-databricks/08-summary
 - Workspace creation and UI: https://learn.microsoft.com/en-us/training/modules/explore-azure-databricks/02-azure-databricks
 - Workloads: https://learn.microsoft.com/en-us/training/modules/explore-azure-databricks/03-workloads

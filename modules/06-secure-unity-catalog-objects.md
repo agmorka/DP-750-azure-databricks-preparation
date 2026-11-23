@@ -183,6 +183,8 @@ SELECT secret('jdbc', 'username');
 
 ## Knowledge check
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/secure-unity-catalog-objects/10-knowledge-check
+
 The module assessment did not load when I read the page, so I have no questions to record. Add them after you take the assessment.
 
 ## Quick review checklist
@@ -198,6 +200,7 @@ The module assessment did not load when I read the page, so I have no questions 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/secure-unity-catalog-objects/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/secure-unity-catalog-objects/10-knowledge-check
 - Query lifecycle: https://learn.microsoft.com/en-us/training/modules/secure-unity-catalog-objects/2-understand-query-lifecycle
 - Access control strategies: https://learn.microsoft.com/en-us/training/modules/secure-unity-catalog-objects/3-implement-access-control-strategies
 - Fine-grained access control: https://learn.microsoft.com/en-us/training/modules/secure-unity-catalog-objects/4-understand-fine-grained-access-control

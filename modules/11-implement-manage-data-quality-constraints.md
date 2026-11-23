@@ -101,11 +101,14 @@ Part of: [Prepare and Process Data with Azure Databricks](../paths/prepare-and-p
 
 ## Knowledge check and exercise
 
+Assessment: https://learn.microsoft.com/en-us/training/modules/implement-manage-data-quality-constraints-unity-catalog/7-knowledge-check
+
 The exercise and knowledge check were not captured in these notes. Review them on the module page before the exam.
 
 ## References
 
 - Module: https://learn.microsoft.com/en-us/training/modules/implement-manage-data-quality-constraints-unity-catalog/
+- Knowledge check: https://learn.microsoft.com/en-us/training/modules/implement-manage-data-quality-constraints-unity-catalog/7-knowledge-check
 - Unit 2, validation checks: https://learn.microsoft.com/en-us/training/modules/implement-manage-data-quality-constraints-unity-catalog/2-implement-validation-checks
 - Unit 3, data type checks: https://learn.microsoft.com/en-us/training/modules/implement-manage-data-quality-constraints-unity-catalog/3-implement-data-type-checks
 - Unit 4, schema drift: https://learn.microsoft.com/en-us/training/modules/implement-manage-data-quality-constraints-unity-catalog/4-detect-manage-schema-drift
