@@ -41,6 +41,15 @@ Each learning path lists its modules. Status is shown next to each item.
 - [10. Cleanse, transform, and load data into Unity Catalog](modules/10-cleanse-transform-load-data-into-unity-catalog.md): profiling, column types, duplicates and nulls, filters, joins, pivots, and load patterns. Notes done (exercise and knowledge check not reviewed).
 - [11. Implement and manage data quality constraints with Azure Databricks](modules/11-implement-manage-data-quality-constraints.md): validation checks, data type checks, schema drift, and pipeline expectations. Notes done (exercise and knowledge check not reviewed).
 
+### Path 4: Deploy and Maintain Data Pipelines and Workloads with Azure Databricks
+
+[Path overview](paths/deploy-maintain-data-pipelines-workloads.md): the fourth path, covering pipeline design, Lakeflow Jobs, development lifecycle, and monitoring and optimization. Overview done.
+
+- [12. Design and implement data pipelines with Azure Databricks](modules/12-design-and-implement-data-pipelines.md): order of operations, notebooks vs Lakeflow pipelines, job task logic, error handling, and declarative pipelines. Notes done (exercise and knowledge check not reviewed).
+- 13. Implement Lakeflow Jobs with Azure Databricks: not started.
+- 14. Implement development lifecycle processes in Azure Databricks: not started.
+- 15. Monitor, troubleshoot and optimize workloads in Azure Databricks: not started.
+
 ## Sources
 
 All content comes from Microsoft Learn and related Microsoft documentation. Each note lists its references at the bottom.
