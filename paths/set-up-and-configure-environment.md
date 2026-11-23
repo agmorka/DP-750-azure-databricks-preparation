@@ -28,7 +28,7 @@ Estimated duration is not stated on the page.
 | 2 | Understand Azure Databricks architecture | Notes done | [Notes](../modules/02-understand-azure-databricks-architecture.md) · [Module](https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-architecture/) |
 | 3 | Understand Azure Databricks Integrations | Not started | [Module](https://learn.microsoft.com/en-us/training/modules/understand-azure-databricks-integrations/) |
 | 4 | Select and Configure Compute in Azure Databricks | Not started | [Module](https://learn.microsoft.com/en-us/training/modules/select-and-configure-compute/) |
-| 5 | Create and organize objects in Unity Catalog | Not started | [Module](https://learn.microsoft.com/en-us/training/modules/create-and-organize-objects-in-unity-catalog/) |
+| 5 | Create and organize objects in Unity Catalog | Notes done | [Notes](../modules/05-create-and-organize-objects-in-unity-catalog.md) · [Module](https://learn.microsoft.com/en-us/training/modules/create-and-organize-objects-in-unity-catalog/) |
 
 ## Back to index
 
