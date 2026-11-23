@@ -17,6 +17,7 @@ The notes follow the Microsoft Learn training content. For each learning path an
 
 - [Set up and Configure an Azure Databricks Environment](paths/set-up-and-configure-environment.md): the first path, covering workspaces, architecture, integrations, compute, and Unity Catalog.
 - [Secure and Govern Unity Catalog Objects in Azure Databricks](paths/secure-and-govern-unity-catalog.md): the second path, covering permissions, row filters, column masks, credentials, governance, and Delta Sharing.
+- [Prepare and Process Data with Azure Databricks](paths/prepare-and-process-data.md): the third path, covering data modeling, ingestion, transformation, and data quality.
 
 ### Modules
 
@@ -26,6 +27,8 @@ The notes follow the Microsoft Learn training content. For each learning path an
 - [04. Select and configure compute in Azure Databricks](modules/04-select-and-configure-compute.md): compute types, performance, features, libraries, and permissions.
 - [05. Create and organize objects in Unity Catalog](modules/05-create-and-organize-objects-in-unity-catalog.md): catalogs, schemas, tables, views, volumes, DDL, foreign catalogs, and Genie.
 - [06. Secure Unity Catalog objects](modules/06-secure-unity-catalog-objects.md): privileges, row filters, column masks, Key Vault, service principals, and managed identities.
+- [07. Govern Unity Catalog objects](modules/07-govern-unity-catalog-objects.md): comments and tags, ABAC, retention, lineage, audit logs, and Delta Sharing.
+- [08. Design and implement data modeling with Azure Databricks](modules/08-design-implement-data-modeling-unity-catalog.md): ingestion design, table formats, partitioning, SCD, granularity, and clustering.
 
 ## Status
 
@@ -40,6 +43,8 @@ The notes follow the Microsoft Learn training content. For each learning path an
 | Path 2: Secure and Govern Unity Catalog Objects in Azure Databricks | Overview done |
 | Module 06: Secure Unity Catalog objects | Notes done (exercise and knowledge check not reviewed) |
 | Module 07: Govern Unity Catalog objects | Notes done (exercise and knowledge check not reviewed) |
+| Path 3: Prepare and Process Data with Azure Databricks | Overview done |
+| Module 08: Design and implement data modeling with Azure Databricks | Notes done (exercise and knowledge check not reviewed) |
 
 ## Sources
 
