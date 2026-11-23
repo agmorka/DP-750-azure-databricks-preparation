@@ -13,38 +13,33 @@ The notes follow the Microsoft Learn training content. For each learning path an
 
 ## Index
 
-### Learning paths
+Each learning path lists its modules. Status is shown next to each item.
 
-- [Set up and Configure an Azure Databricks Environment](paths/set-up-and-configure-environment.md): the first path, covering workspaces, architecture, integrations, compute, and Unity Catalog.
-- [Secure and Govern Unity Catalog Objects in Azure Databricks](paths/secure-and-govern-unity-catalog.md): the second path, covering permissions, row filters, column masks, credentials, governance, and Delta Sharing.
-- [Prepare and Process Data with Azure Databricks](paths/prepare-and-process-data.md): the third path, covering data modeling, ingestion, transformation, and data quality.
+### Path 1: Set up and Configure an Azure Databricks Environment
 
-### Modules
+[Path overview](paths/set-up-and-configure-environment.md): the first path, covering workspaces, architecture, integrations, compute, and Unity Catalog. Overview done.
 
-- [01. Explore Azure Databricks](modules/01-explore-azure-databricks.md): workspace setup, workloads, key concepts, and data governance. Includes a lab summary.
-- [02. Understand Azure Databricks architecture](modules/02-understand-azure-databricks-architecture.md): account hierarchy, control and compute planes, and storage.
-- [03. Understand Azure Databricks integrations](modules/03-understand-azure-databricks-integrations.md): Fabric, Power BI, VS Code, Power Platform, Copilot Studio, Purview, and Foundry.
-- [04. Select and configure compute in Azure Databricks](modules/04-select-and-configure-compute.md): compute types, performance, features, libraries, and permissions.
-- [05. Create and organize objects in Unity Catalog](modules/05-create-and-organize-objects-in-unity-catalog.md): catalogs, schemas, tables, views, volumes, DDL, foreign catalogs, and Genie.
-- [06. Secure Unity Catalog objects](modules/06-secure-unity-catalog-objects.md): privileges, row filters, column masks, Key Vault, service principals, and managed identities.
-- [07. Govern Unity Catalog objects](modules/07-govern-unity-catalog-objects.md): comments and tags, ABAC, retention, lineage, audit logs, and Delta Sharing.
-- [08. Design and implement data modeling with Azure Databricks](modules/08-design-implement-data-modeling-unity-catalog.md): ingestion design, table formats, partitioning, SCD, granularity, and clustering.
+- [01. Explore Azure Databricks](modules/01-explore-azure-databricks.md): workspace setup, workloads, key concepts, and data governance. Notes done (knowledge check not reviewed).
+- [02. Understand Azure Databricks architecture](modules/02-understand-azure-databricks-architecture.md): account hierarchy, control and compute planes, and storage. Notes done (knowledge check not reviewed).
+- [03. Understand Azure Databricks integrations](modules/03-understand-azure-databricks-integrations.md): Fabric, Power BI, VS Code, Power Platform, Copilot Studio, Purview, and Foundry. Notes done (knowledge check not reviewed).
+- [04. Select and configure compute in Azure Databricks](modules/04-select-and-configure-compute.md): compute types, performance, features, libraries, and permissions. Notes done (exercise steps and knowledge check not reviewed).
+- [05. Create and organize objects in Unity Catalog](modules/05-create-and-organize-objects-in-unity-catalog.md): catalogs, schemas, tables, views, volumes, DDL, foreign catalogs, and Genie. Notes done (knowledge check not reviewed).
 
-## Status
+### Path 2: Secure and Govern Unity Catalog Objects in Azure Databricks
 
-| Item | Status |
-|---|---|
-| Path 1: Set up and Configure an Azure Databricks Environment | Overview done |
-| Module 01: Explore Azure Databricks | Notes done (knowledge check not reviewed) |
-| Module 02: Understand Azure Databricks architecture | Notes done (knowledge check not reviewed) |
-| Module 03: Understand Azure Databricks Integrations | Notes done (knowledge check not reviewed) |
-| Module 04: Select and Configure Compute in Azure Databricks | Notes done (exercise steps and knowledge check not reviewed) |
-| Module 05: Create and organize objects in Unity Catalog | Notes done (knowledge check not reviewed) |
-| Path 2: Secure and Govern Unity Catalog Objects in Azure Databricks | Overview done |
-| Module 06: Secure Unity Catalog objects | Notes done (exercise and knowledge check not reviewed) |
-| Module 07: Govern Unity Catalog objects | Notes done (exercise and knowledge check not reviewed) |
-| Path 3: Prepare and Process Data with Azure Databricks | Overview done |
-| Module 08: Design and implement data modeling with Azure Databricks | Notes done (exercise and knowledge check not reviewed) |
+[Path overview](paths/secure-and-govern-unity-catalog.md): the second path, covering permissions, row filters, column masks, credentials, governance, and Delta Sharing. Overview done.
+
+- [06. Secure Unity Catalog objects](modules/06-secure-unity-catalog-objects.md): privileges, row filters, column masks, Key Vault, service principals, and managed identities. Notes done (exercise and knowledge check not reviewed).
+- [07. Govern Unity Catalog objects](modules/07-govern-unity-catalog-objects.md): comments and tags, ABAC, retention, lineage, audit logs, and Delta Sharing. Notes done (exercise and knowledge check not reviewed).
+
+### Path 3: Prepare and Process Data with Azure Databricks
+
+[Path overview](paths/prepare-and-process-data.md): the third path, covering data modeling, ingestion, transformation, and data quality. Overview done.
+
+- [08. Design and implement data modeling with Azure Databricks](modules/08-design-implement-data-modeling-unity-catalog.md): ingestion design, table formats, partitioning, SCD, granularity, and clustering. Notes done (exercise and knowledge check not reviewed).
+- 09. Ingest data into Unity Catalog: not started.
+- 10. Cleanse, transform, and load data into Unity Catalog: not started.
+- 11. Implement and manage data quality constraints with Azure Databricks: not started.
 
 ## Sources
 
