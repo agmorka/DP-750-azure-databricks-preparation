@@ -25,7 +25,7 @@ Source: [Learning path page](https://learn.microsoft.com/en-us/training/paths/az
 | 1 | Design and implement data pipelines with Azure Databricks | Notes done | [Notes](../modules/12-design-and-implement-data-pipelines.md) · [Module](https://learn.microsoft.com/en-us/training/modules/design-implement-data-pipelines/) |
 | 2 | Implement Lakeflow Jobs with Azure Databricks | Notes done | [Notes](../modules/13-implement-lakeflow-jobs.md) · [Module](https://learn.microsoft.com/en-us/training/modules/implement-lakeflow-jobs/) |
 | 3 | Implement development lifecycle processes in Azure Databricks | Notes done | [Notes](../modules/14-implement-development-lifecycle-processes.md) · [Module](https://learn.microsoft.com/en-us/training/modules/implement-development-lifecycle-processes-in-azure-databricks/) |
-| 4 | Monitor, troubleshoot and optimize workloads in Azure Databricks | Not started | [Module](https://learn.microsoft.com/en-us/training/modules/monitor-troubleshoot-optimize-workloads-azure-databricks/) |
+| 4 | Monitor, troubleshoot and optimize workloads in Azure Databricks | Notes done | [Notes](../modules/15-monitor-troubleshoot-optimize-workloads.md) · [Module](https://learn.microsoft.com/en-us/training/modules/monitor-troubleshoot-optimize-workloads-azure-databricks/) |
 
 ## Back to index
 
