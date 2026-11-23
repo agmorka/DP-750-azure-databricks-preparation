@@ -28,7 +28,7 @@ The notes follow the Microsoft Learn training content. For each learning path an
 | Path: Set up and Configure an Azure Databricks Environment | Overview done |
 | Module 01: Explore Azure Databricks | Notes done (knowledge check not reviewed) |
 | Module 02: Understand Azure Databricks architecture | Notes done (knowledge check not reviewed) |
-| Module 03: Understand Azure Databricks Integrations | Not started |
+| Module 03: Understand Azure Databricks Integrations | Notes done (knowledge check not reviewed) |
 | Module 04: Select and Configure Compute in Azure Databricks | Not started |
 | Module 05: Create and organize objects in Unity Catalog | Notes done (knowledge check not reviewed) |
 
